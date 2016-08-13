@@ -13,8 +13,9 @@
     [humanize Humanize]
     ))
 
+
 (defn check-memory-usage []
-  (System/gc)
+  ; (System/gc)
   (let [rt (Runtime/getRuntime)
         max-mem (.maxMemory rt)
         allocated-mem (.totalMemory rt)
