@@ -73,7 +73,7 @@
       (when-let [user (session-user session-object)]
         (validate! (-> session-object :signature)
                    (get-session-secret)
-                   (-> user :password_digest))
+                   (or (-> user :password_digest) ""))
         (validate-expiration! user session-object)
         (when-not (:account_enabled user)
           (throw (IllegalStateException. "Account disabled!")))
