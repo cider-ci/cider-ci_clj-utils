@@ -11,6 +11,7 @@
  [clj-yaml "0.4.0"]
  [com.github.mfornos/humanize-slim "1.2.2"]
  [com.mchange/c3p0 "0.9.5.2"]
+ [com.taoensso/sente "1.10.0"]
  [compojure "1.5.1"]
  [drtom/clj-uuid  "0.1.7"]
  [environ "1.1.0"]
